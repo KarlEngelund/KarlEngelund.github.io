@@ -1,1 +1,161 @@
-Hello World
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Personal academic website of Karl Kristian Engelund."
+    />
+    <title>Karl Kristian Engelund</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <main class="page">
+      <header class="site-header">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <button
+            class="nav-link"
+            type="button"
+            data-tab="about"
+            aria-pressed="true"
+            aria-controls="about"
+          >
+            About
+          </button>
+          <button
+            class="nav-link"
+            type="button"
+            data-tab="publications"
+            aria-pressed="false"
+            aria-controls="publications"
+          >
+            Publications
+          </button>
+          <a class="nav-link cv-link" href="CV_KarlKristianEngelund.pdf" target="_blank" rel="noreferrer">
+            View CV <span aria-hidden="true">↗</span>
+          </a>
+        </nav>
+      </header>
+
+      <div class="page-content">
+        <aside class="profile" aria-label="Researcher profile">
+          <img
+            class="profile-photo"
+            src="Karl-Kristian-Engelund-1100x600.jpg"
+            alt="Portrait of Karl Kristian Engelund"
+            width="210"
+            height="210"
+          />
+
+          <div class="profile-heading">
+            <h1>Karl Kristian Engelund</h1>
+            <p>PhD Fellow<br />University of Copenhagen</p>
+          </div>
+
+          <div class="profile-links" aria-label="Professional profiles">
+            <a href="https://scholar.google.com/citations?user=FDVqNmsAAAAJ" target="_blank" rel="noreferrer">
+              Google Scholar
+            </a>
+            <a href="https://www.linkedin.com/in/karl-kristian-engelund/" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+            <a href="mailto:kken@math.ku.dk">Email</a>
+          </div>
+
+          <div class="education">
+            <p class="eyebrow">Education</p>
+            <ul>
+              <li>
+                <strong>PhD in Mathematical Finance</strong>
+                <span>University of Copenhagen · expected 2027</span>
+              </li>
+              <li>
+                <strong>MSc in Actuarial Science</strong>
+                <span>University of Copenhagen · 2023</span>
+              </li>
+              <li>
+                <strong>BSc in Mathematics</strong>
+                <span>University of Copenhagen · 2021</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <div class="main-column">
+          <section class="panel" id="about" data-panel="about">
+            <p class="eyebrow">About</p>
+            <!-- <h2>I study <span>the question at the heart of your research.</span></h2> -->
+
+            <div class="biography">
+              <p>
+                I am a PhD student in the Department of Mathematical Sciences at the University of Copenhagen, 
+                where I work in the Insurance and Economics section under the supervision of  
+                <a href="https://researchprofiles.ku.dk/en/persons/jesper-lund-pedersen/" target="_blank" rel="noreferrer">Jesper Lund Pedersen</a>
+                and <a href="https://researchprofiles.ku.dk/en/persons/thomas-valentin-mikosch/" target="_blank" rel="noreferrer">Thomas Mikosch</a>. 
+                I have also been a visiting scholar at Columbia University, 
+                hosted by <a href="https://sites.stat.columbia.edu/rdavis/" target="_blank" rel="noreferrer">Richard Davis</a> and <a href="https://www.stevenacampbell.com/" target="_blank" rel="noreferrer">Steven Campbell</a>, and at the University of Technology Sydney, 
+                hosted by Professor <a href="https://www.uts.edu.au/staff/kristoffer.glover" target="_blank" rel="noreferrer">Kristoffer Glover</a>.
+              </p>
+              <p>
+                My research is motivated by problems in mathematical finance, stochastic control, and decision-making under uncertainty. I am particularly interested in optimal stopping problems, stochastic games, and sequential statistical inference. My work combines probabilistic methods, stochastic analysis, and numerical techniques to study decision problems involving incomplete information, learning, and strategic interactions.
+              </p>
+            </div>
+
+            <div class="interests">
+              <p class="eyebrow">Research interests</p>
+              <ul>
+                <li>Mathematical Finance</li>
+                <li>Probability Theory</li>
+                <li>Sequential Statistical Decision Theory</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="panel" id="publications" data-panel="publications" hidden>
+            <p class="eyebrow">Publications</p>
+            <!-- <h2>Selected work</h2> -->
+
+            <ol class="publication-list">
+              <li>
+                <article>
+                  <p class="publication-meta">2026 · Preprint, submitted</p>
+                  <h3><a href="https://arxiv.org/abs/2608.12291">When should one stop the most exciting game? Sequential Inference for win-martingales</a></h3>
+                  <p>Steven Campbell, <strong>Karl Kristian Engelund</strong></p>
+                </article>
+              </li>
+              <li>
+                <article>
+                  <p class="publication-meta">2026 · Preprint, submitted</p>
+                  <h3><a href="https://arxiv.org/abs/2607.20373">Embedding martingale diffusions as binary posteriors in sequential inference</a></h3>
+                  <p>Steven Campbell, <strong>Karl Kristian Engelund</strong></p>
+                </article>
+              </li>
+              <li>
+                <article>
+                  <p class="publication-meta">2026 · Preprint, revision submitted</p>
+                  <h3><a href="https://arxiv.org/abs/2610.20366">Regime Detection in Latent Factor Models -- A Bayesian Decision-Theoretic Approach</a></h3>
+                  <p><strong>Karl Kristian Engelund</strong></p>
+                </article>
+              </li>
+            </ol>
+
+            <p class="publication-note">
+              For a complete and current list, visit my
+              <a href="https://scholar.google.com/citations?user=FDVqNmsAAAAJ" target="_blank" rel="noreferrer">
+                Google Scholar profile
+              </a>
+            </p>
+          </section>
+        </div>
+      </div>
+
+      <footer>
+        <span>© <span id="year"></span> Karl Kristian Engelund</span>
+        <span>Copenhagen, Denmark</span>
+      </footer>
+    </main>
+  </body>
+</html>
