@@ -19,7 +19,10 @@ function showTab(tabName, updateHash = true) {
 }
 
 tabButtons.forEach((button) => {
-  button.addEventListener("click", () => showTab(button.dataset.tab));
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    showTab(button.dataset.tab);
+  });
 });
 
 window.addEventListener("hashchange", () => {
